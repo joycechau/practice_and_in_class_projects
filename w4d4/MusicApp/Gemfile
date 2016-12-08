@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'annotate'
 gem 'letter_opener'
 gem 'bcrypt'
 gem 'pry-rails'

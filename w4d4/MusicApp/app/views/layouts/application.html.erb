@@ -10,5 +10,16 @@
 
 <%= yield %>
 
+<% if flash.now[:errors] %>
+  <% flash.now[:errors].each do |error| %>
+    <br>
+    <%= error %>
+  <% end %>
+<% end %>
+
+<% if current_user %>
+  <%= button_to "Log Out!", session_url, method: :delete %>
+<% end %>
+
 </body>
 </html>
